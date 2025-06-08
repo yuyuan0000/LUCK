@@ -41,12 +41,12 @@
       max-width: 600px;
       margin: 0.5rem 0;
       line-height: 1.6;
-      color: #ffb6c1;
+      color: #ffffff; /* 改为纯白更清晰 */
     }
 
     .note {
       font-size: 1rem;
-      color: #ffc0cb;
+      color: #fff59d; /* 明亮黄色提示文字 */
       margin-top: 1rem;
     }
 
@@ -55,7 +55,7 @@
       font-size: 1.5rem;
       font-weight: bold;
       margin-top: 1rem;
-      color: #ff80ab;
+      color: #ffccdd;
       cursor: pointer;
       user-select: none;
       padding: 0.5rem 1rem;
@@ -75,7 +75,7 @@
     }
 
     small {
-      color: #ffcdd2;
+      color: #ffe0e0;
       margin-top: 2rem;
       display: block;
     }
@@ -95,7 +95,7 @@
 
   <script>
     function copyNumber() {
-      const number = '+447123456789';
+      const number = '+85259053792';
       navigator.clipboard.writeText(number).then(() => {
         document.getElementById('copyMsg').style.display = 'block';
       });
