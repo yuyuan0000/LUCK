@@ -10,6 +10,7 @@
       --pink: #ff4081;
       --pink-dark: #e91e63;
       --purple: #9c27b0;
+      --red: #ff5252;
     }
 
     body {
@@ -41,13 +42,15 @@
       max-width: 600px;
       margin: 0.5rem 0;
       line-height: 1.6;
-      color: #ffffff; /* 改为纯白更清晰 */
+      color: #ffffff;
+      font-weight: bold; /* 加粗 */
     }
 
     .note {
       font-size: 1rem;
-      color: #fff59d; /* 明亮黄色提示文字 */
+      color: var(--red); /* 红色说明 */
       margin-top: 1rem;
+      font-weight: bold; /* 加粗 */
     }
 
     #whatsappNumber {
@@ -55,7 +58,7 @@
       font-size: 1.5rem;
       font-weight: bold;
       margin-top: 1rem;
-      color: #ffccdd;
+      color: var(--red); /* 红色电话号码 */
       cursor: pointer;
       user-select: none;
       padding: 0.5rem 1rem;
@@ -72,6 +75,7 @@
       margin-top: 10px;
       color: #a5f1c1;
       display: none;
+      font-weight: bold;
     }
 
     small {
