@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello, Friend</title>
+
+  <style>
+    :root {
+      --pink: #ff4081;
+      --pink-dark: #e91e63;
+      --purple: #9c27b0;
+    }
+
+    body {
+      margin: 0;
+      padding: 0 1rem;
+      font-family: "Segoe UI", sans-serif;
+      color: var(--pink);
+      text-align: center;
+      background: #000 url('https://cdn.jsdelivr.net/gh/yuyuan0000/hello/photo_2025-01-17_20-23-58.webp') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: brightness(0.6);
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      background: linear-gradient(45deg, var(--pink), var(--pink-dark), var(--purple));
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin: 0.5rem 0;
+      line-height: 1.6;
+      color: #ffb6c1;
+    }
+
+    .note {
+      font-size: 1rem;
+      color: #ffc0cb;
+      margin-top: 1rem;
+    }
+
+    #whatsappNumber {
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 1rem;
+      color: #ff80ab;
+      cursor: pointer;
+      user-select: none;
+      padding: 0.5rem 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      transition: background 0.3s ease;
+    }
+
+    #whatsappNumber:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    #copyMsg {
+      margin-top: 10px;
+      color: #a5f1c1;
+      display: none;
+    }
+
+    small {
+      color: #ffcdd2;
+      margin-top: 2rem;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Looking for Someone?</h1>
+  <p>Not every connection starts with sparks flying.</p>
+  <p>Sometimes, a simple "Hi" is enough to meet someone special.</p>
+  <p>I'm also waiting for someone who's willing to get to know me, slowly.</p>
+  <p class="note">📱 Tap the WhatsApp number below to copy it. Add me and let’s talk.</p>
+
+  <div id="whatsappNumber" onclick="copyNumber()">+44 7123 456789</div>
+  <p id="copyMsg">✅ Number copied! Open WhatsApp and paste it to add me!</p>
+
+  <small>This is a private invitation page. Not affiliated with WhatsApp.</small>
+
+  <script>
+    function copyNumber() {
+      const number = '+447123456789';
+      navigator.clipboard.writeText(number).then(() => {
+        document.getElementById('copyMsg').style.display = 'block';
+      });
+    }
+  </script>
+</body>
+</html>
+
